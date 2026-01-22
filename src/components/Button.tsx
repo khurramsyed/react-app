@@ -7,7 +7,7 @@ type ButtonProps = {
 };
 const Button = ({ children, onClick, buttonType = "primary" }: ButtonProps) => {
   return (
-    <div>
+    <div className="col-12">
       <button className={"btn btn-" + buttonType} onClick={onClick}>
         {children}
       </button>
