@@ -2,6 +2,7 @@
 
 import Accordion from "./components/Accordion";
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 
 function App() {
   /*let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
@@ -22,6 +23,7 @@ function App() {
           <Accordion></Accordion>
         </div>
       </div>
+      <Button onClick={() => console.log("Clicked")}> Hello World</Button>
     </>
   );
 }
