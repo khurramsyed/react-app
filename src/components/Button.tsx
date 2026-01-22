@@ -1,4 +1,3 @@
-
 type ButtonType = "primary" | "secondary" | "success" | "warning" | "danger";
 type ButtonProps {
     children: string
@@ -9,7 +8,7 @@ type ButtonProps {
 const Button = ({children,onClick,buttonType}: ButtonProps) => {
   return (
     <div>
-        <button className={"btn btn-"+buttonType} onClick={onClick}>children</button>
+        <button className={"btn btn-"+buttonType} onClick={onClick}>{children}</button>
     </div>
   )
 }
